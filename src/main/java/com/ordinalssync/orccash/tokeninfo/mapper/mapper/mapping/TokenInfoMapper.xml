@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ordinalssync.orccash.tokeninfo.mapper.mapper.TokenInfoMapper">
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap"
+               type="com.ordinalssync.orccash.tokeninfo.data.object.TokenInfoDO">
+        <id column="id" property="id"/>
+        <result column="ticker" property="ticker"/>
+        <result column="max_number" property="maxNumber"/>
+        <result column="limit_number" property="limitNumber"/>
+        <result column="total_minted" property="totalMinted"/>
+        <result column="amount" property="amount"/>
+        <result column="token_decimal" property="tokenDecimal"/>
+        <result column="tx_id" property="txId"/>
+        <result column="inscription_id" property="inscriptionID"/>
+        <result column="inscription_number" property="inscriptionNumber"/>
+        <result column="vout" property="vout"/>
+        <result column="satoshi" property="satoshi"/>
+        <result column="pk_script" property="pkScript"/>
+        <result column="deployer" property="deployer"/>
+        <result column="create_idx_key" property="createIdxKey"/>
+        <result column="deploy_height" property="deployHeight"/>
+        <result column="deploy_times" property="deployTimes"/>
+        <result column="complete_height" property="completeHeight"/>
+        <result column="complete_block_time" property="completeBlockTime"/>
+        <result column="inscription_number_end" property="inscriptionNumberEnd"/>
+        <result column="holders" property="holders"/>
+        <result column="transactions" property="transactions"/>
+        <result column="upgradable" property="upgradable"/>
+        <result column="name" property="name"/>
+        <result column="migration_wrapper" property="migrationWrapper"/>
+        <result column="token_version" property="tokenVersion"/>
+        <result column="message" property="message"/>
+        <result column="orc20_id" property="orc20Id"/>
+        <result column="progress" property="progress"/>
+        <result column="protocol" property="protocol"/>
+        <result column="is_self" property="isSelf"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_time" property="updateTime"/>
+        <result column="create_user" property="createUser"/>
+        <result column="update_user" property="updateUser"/>
+    </resultMap>
+
+</mapper>

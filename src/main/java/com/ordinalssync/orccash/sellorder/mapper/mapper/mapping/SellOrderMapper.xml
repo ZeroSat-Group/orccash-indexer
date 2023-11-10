@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ordinalssync.orccash.sellorder.mapper.mapper.SellOrderMapper">
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.ordinalssync.orccash.sellorder.data.object.SellOrderDO">
+        <id column="id" property="id" />
+        <result column="ticker" property="ticker" />
+        <result column="token_id" property="tokenId" />
+        <result column="tx_id" property="txId" />
+        <result column="height" property="height" />
+        <result column="inscription_number" property="inscriptionNumber" />
+        <result column="inscription_id" property="inscriptionId" />
+        <result column="token_inscription_id" property="tokenInscriptionId" />
+        <result column="amount" property="amount" />
+        <result column="lim" property="lim" />
+        <result column="price" property="price" />
+        <result column="expire" property="expire" />
+        <result column="seller" property="seller" />
+        <result column="buyer" property="buyer" />
+        <result column="sold_amount" property="soldAmount" />
+        <result column="status" property="status" />
+        <result column="chain_time" property="chain_time" />
+        <result column="activation_address" property="activation_address" />
+        <result column="token_inscription_number" property="tokenInscriptionNumber" />
+        <result column="chain_time" property="chainTime" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="create_user" property="createUser" />
+        <result column="update_user" property="updateUser" />
+    </resultMap>
+
+</mapper>

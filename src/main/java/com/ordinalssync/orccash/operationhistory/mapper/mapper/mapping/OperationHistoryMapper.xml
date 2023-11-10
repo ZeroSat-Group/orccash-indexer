@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ordinalssync.orccash.operationhistory.mapper.mapper.OperationHistoryMapper">
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap"
+               type="com.ordinalssync.orccash.operationhistory.data.object.OperationHistoryDO">
+        <id column="id" property="id"/>
+        <result column="type" property="type"/>
+        <result column="tx_hash" property="txHash"/>
+        <result column="number" property="number"/>
+        <result column="inscription_id" property="inscriptionID"/>
+        <result column="ticker" property="ticker"/>
+        <result column="amount" property="amount"/>
+        <result column="vout" property="vout"/>
+        <result column="create_idx_key" property="createIdxKey"/>
+        <result column="pk_script_from" property="pkScriptFrom"/>
+        <result column="pk_script_to" property="pkScriptTo"/>
+        <result column="from_address" property="fromAddress"/>
+        <result column="to_address" property="toAddress"/>
+        <result column="satoshi" property="satoshi"/>
+        <result column="block_time" property="blockTime"/>
+        <result column="height" property="height"/>
+        <result column="status" property="status"/>
+        <result column="orc20_id" property="orc20Id"/>
+        <result column="error_msg" property="errorMsg"/>
+        <result column="token_inscription_number" property="tokenInscriptionNumber"/>
+        <result column="nonce" property="nonce"/>
+        <result column="transferable" property="transferable"/>
+        <result column="holder_address" property="holderAddress"/>
+        <result column="location" property="location"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_time" property="updateTime"/>
+        <result column="create_user" property="createUser"/>
+        <result column="update_user" property="updateUser"/>
+    </resultMap>
+
+</mapper>

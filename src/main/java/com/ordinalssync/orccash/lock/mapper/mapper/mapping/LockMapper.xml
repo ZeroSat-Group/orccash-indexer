@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ordinalssync.orccash.lock.mapper.mapper.LockMapper">
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.ordinalssync.orccash.lock.data.object.LockDO">
+        <id column="id" property="id" />
+        <result column="ticker" property="ticker" />
+        <result column="token_id" property="tokenId" />
+        <result column="amount" property="amount" />
+        <result column="expire" property="expire" />
+        <result column="to_address" property="toAddress" />
+        <result column="status" property="status" />
+        <result column="is_activated" property="isActivated" />
+        <result column="initial_address" property="initialAddress" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="create_user" property="createUser" />
+        <result column="update_user" property="updateUser" />
+        <result column="active_height" property="activeHeight" />
+        <result column="inscription_id" property="inscriptionId" />
+        <result column="token_inscription_id" property="tokenInscriptionId" />
+    </resultMap>
+
+</mapper>

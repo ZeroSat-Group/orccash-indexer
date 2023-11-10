@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ordinalssync.orccash.inscriptiondata.mapper.mapper.InscriptionDataMapper">
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap"
+               type="com.ordinalssync.orccash.inscriptiondata.data.object.InscriptionDataDO">
+        <id column="id" property="id"/>
+        <result column="is_transfer" property="isTransfer"/>
+        <result column="tx_hash" property="txHash"/>
+        <result column="vout" property="vout"/>
+        <result column="satoshi" property="satoshi"/>
+        <result column="pk_script" property="pkScript"/>
+        <result column="ticker" property="ticker"/>
+        <result column="inscription_number" property="inscriptionNumber"/>
+        <result column="content_body" property="contentBody"/>
+        <result column="create_idx_key" property="createIdxKey"/>
+        <result column="height" property="height"/>
+        <result column="block_time" property="blockTime"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_time" property="updateTime"/>
+        <result column="create_user" property="createUser"/>
+        <result column="update_user" property="updateUser"/>
+        <result column="genesis_transaction" property="genesisTransaction"/>
+        <result column="txidx" property="txidx"/>
+        <result column="deal" property="deal"/>
+        <result column="protocol" property="protocol"/>
+        <result column="location" property="location"/>
+    </resultMap>
+
+</mapper>
